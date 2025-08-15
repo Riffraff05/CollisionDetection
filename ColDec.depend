@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1750068748 source:/home/riffraff/C stuff/game1/glad stuff/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1750068748 /home/riffraff/C stuff/game1/glad stuff/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1750068748 /home/riffraff/C stuff/game1/glad stuff/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1752791204 source:/home/riffraff/C stuff/game1/thisagame.cpp
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<iostream>
+
+1750068748 source:/home/riffraff/C stuff/gameNeedsFixn'/glad stuff/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1750068748 /home/riffraff/C stuff/gameNeedsFixn'/glad stuff/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1750068748 /home/riffraff/C stuff/gameNeedsFixn'/glad stuff/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1750068748 source:/home/riffraff/C stuff/gameNeedsFixn/glad stuff/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1750068748 /home/riffraff/C stuff/gameNeedsFixn/glad stuff/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1750068748 /home/riffraff/C stuff/gameNeedsFixn/glad stuff/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1753641136 source:/home/riffraff/C stuff/gameNeedsFixn/thisagame.cpp
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<vector>
+	<iostream>
+
+1750068748 source:/home/riffraff/C stuff/CollisionDetection/glad stuff/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1750068748 /home/riffraff/C stuff/CollisionDetection/glad stuff/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1750068748 /home/riffraff/C stuff/CollisionDetection/glad stuff/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
