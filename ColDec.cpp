@@ -1,4 +1,4 @@
-#include <glad/glad.h>
+﻿#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <vector>
 #include <iostream>
@@ -109,12 +109,21 @@ public:
 		float x2 = x + width;
 		float y2 = y;
 
+		/*(x1, y1)  (x2, y1)
+			┌───────┐
+			│       │
+			│       │
+			┌─┐ < -start
+			└─┘─────┘
+		  (x1, y2)  (x2, y2)*/
+		
 		float vertices[] = {
 			x1, y1, 0.0f, red, green, blue, //Top-left
 			x2, y1, 0.0f, red, green, blue, //top-right
 			x1, y2, 0.0f, red, green, blue, //bottom-left
 			x2, y2, 0.0f, red, green, blue //bottom-right
 		};
+
 
 		unsigned indices[] = {
 		0, 1, 2,
@@ -274,7 +283,17 @@ int main() {
 		if (checkCollision(player, gameObjects[0])) {
 			player.setColor(1.0f, 0.0f, 0.0f);
 			//obj.setColor(0.0f, 1.0f, 1.0f);
-			std::cout << "Colliding... " << "\n";
+			std::cout << "Colliding... RED " << "\n";
+		}
+		else if(checkCollision(player, gameObjects[1])) {
+			player.setColor(1.0f, 0.0f, 0.0f);
+			//obj.setColor(0.0f, 1.0f, 1.0f);
+			std::cout << "Colliding...BLUE " << "\n";
+		}
+		else if (checkCollision(player, gameObjects[2])) {
+			player.setColor(1.0f, 0.0f, 0.0f);
+			//obj.setColor(0.0f, 1.0f, 1.0f);
+			std::cout << "Colliding...YELLOW " << "\n";
 		}
 		else
 		{
