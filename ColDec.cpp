@@ -274,7 +274,11 @@ int main() {
 		if (checkCollision(player, gameObjects[0])) {
 			player.setColor(1.0f, 0.0f, 0.0f);
 			//obj.setColor(0.0f, 1.0f, 1.0f);
-			std::cout << "On" << "\n";
+			std::cout << "Colliding... " << "\n";
+		}
+		else
+		{
+			system("cls");
 		}
 		//}
 
