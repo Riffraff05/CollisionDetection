@@ -285,19 +285,17 @@ int main() {
 			//obj.setColor(0.0f, 1.0f, 1.0f);
 			std::cout << "Colliding... RED " << "\n";
 		}
-		else if(checkCollision(player, gameObjects[1])) {
+
+		if (checkCollision(player, gameObjects[1])) {
 			player.setColor(1.0f, 0.0f, 0.0f);
 			//obj.setColor(0.0f, 1.0f, 1.0f);
 			std::cout << "Colliding...BLUE " << "\n";
 		}
-		else if (checkCollision(player, gameObjects[2])) {
+
+		if (checkCollision(player, gameObjects[2])) {
 			player.setColor(1.0f, 0.0f, 0.0f);
 			//obj.setColor(0.0f, 1.0f, 1.0f);
 			std::cout << "Colliding...YELLOW " << "\n";
-		}
-		else
-		{
-			system("cls");
 		}
 		//}
 
