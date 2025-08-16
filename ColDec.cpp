@@ -6,7 +6,7 @@
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void processInput(GLFWwindow *window);
 
-
+//TEST
 //SHADERS
 
 const char *vertexShaderSource = "#version 330 core\n"
