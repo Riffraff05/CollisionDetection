@@ -41,8 +41,8 @@ public:
 	float x, y;
 	float width, height;
 	float r, g, b;
-	float xThing;
-	float yThing;
+	float xPlayerPosition;
+	float yPlayerPosition;
 
 	Object(float initialX, float initialY, float w, float h, float red, float green, float blue)
 	: x(initialX), y(initialY), width(w), height(h), r(red), g(green), b(blue) {}
@@ -91,8 +91,8 @@ public:
 
 
 
-		xThing = movementX + x;
-		yThing = movementY + y;
+		xPlayerPosition = movementX + x;
+		yPlayerPosition = movementY + y;
 
 	}
 };
@@ -144,8 +144,8 @@ public:
 //Check collision. I've gotten this to work. But I haven't made it connect and communicate to the player class to stop the player from passing through an object.
 
 bool checkCollision(const Object& objA, const Object& objB) {
-	bool collisionX = objA.xThing + objA.width > objB.x && objB.x + objB.width > objA.xThing;
-	bool collisionY = objA.yThing > objB.y - objB.height && objB.y > objA.yThing - objA.height;
+	bool collisionX = objA.xPlayerPosition + objA.width > objB.x && objB.x + objB.width > objA.xPlayerPosition;
+	bool collisionY = objA.yPlayerPosition > objB.y - objB.height && objB.y > objA.yPlayerPosition - objA.height;
 
 
 
@@ -309,7 +309,7 @@ return 0;
 }
 
 
-//Checks for esc key
+//Checks for esc key to close window
 void processInput(GLFWwindow* window) {
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
 			glfwSetWindowShouldClose(window, true);
